@@ -40,6 +40,7 @@ public class TouchInput : MonoBehaviour
 
     public void DoubleTap(InputAction.CallbackContext ctx)
     {
+        Debug.Log("Double tapped");
         if (ctx.phase == InputActionPhase.Performed)
         {
             debugText.text = "Changed camera";
